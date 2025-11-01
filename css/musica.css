@@ -9,7 +9,7 @@ body {background-color: black;}
   align-items: center;
 width: 1150px; min-height: 1500px;}
 
-.porcion { 
+section { 
   max-width:1100px; width:1100px; 
   height:800px; min-height:500px; 
   display: flex; justify-content: space-evenly;}

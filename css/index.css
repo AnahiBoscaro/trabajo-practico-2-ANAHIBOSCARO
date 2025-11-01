@@ -73,7 +73,7 @@ font-size: 2em}
 
 
 #contenedor2 {
-  height: 500px;
+  height: 700px;
   width: 1150px;
   display: flex;
   align-items: center;
@@ -121,20 +121,28 @@ font-size: 2em}
 
 /* Fondo por cada categoría */
 .tarjeta.musica {
-  background-image: url("../img/musica/tarjeta-musica.jpg");
-}
+  background-image: url("../img/musica/tarjeta-musica.jpg");}
 
 .tarjeta.naturaleza {
-  background-image: url("../img/naturaleza/tarjeta-naturaleza.jpg");
-}
+  background-image: url("../img/naturaleza/tarjeta-naturaleza.jpg");}
 
 .tarjeta.urbana {
-  background-image: url("../img/urbanas/tarjeta-urbana.jpg");
-}
+  background-image: url("../img/urbanas/tarjeta-urbana.jpg");}
 
 .tarjeta.perfo {
-  background-image: url("../img/perfo/tarjeta-perfo.jpg");
-}
+  background-image: url("../img/perfo/tarjeta-perfo.jpg");}
+
+.tarjeta.inspiraciones {
+  background-image: url("../img/tarjeta-inspiraciones.jpg");}
+
+.tarjeta.reflexiones {
+  background-image: url("../img/tarjeta-reflexiones.jpg");}
+
+.tarjeta.contacto {
+  background-image: url("../img/tarjeta-contacto.jpg");}
+
+.tarjeta.datos {
+  background-image: url("../img/tarjeta-datos.jpg");}
 
 /* Texto centrado con sombra para que se lea mejor */
 .tarjeta span {
