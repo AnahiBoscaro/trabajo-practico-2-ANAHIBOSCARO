@@ -1,0 +1,70 @@
+ 
+ /* BODY*/ 
+.bg-light { background-color: #0a0c32 !important;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;}
+
+
+#contenedorGeneral {background-color: #7fc394;
+    width: 800px;
+    border: solid black;
+    border-radius: 45px;
+	height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;}
+
+
+.text-center {
+    text-align: left !important;}
+
+h2 {font-family: "Coda";
+    font-weight: 800; 
+    font-style: normal; 
+    font-size: 3em; 
+    color: #0a0c32; }
+
+.form-label {font-family: "Anaheim", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; font-size: 1.3em}
+
+form {width: 650px}
+
+
+
+footer {height: 70px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e79898 ;
+    align-items: center;
+     margin: 1em}
+
+footer div {height: 50px;
+    width: 300px;
+    display: flex;
+    margin: 1em;
+    justify-content: space-evenly;
+    align-items: center;}
+
+footer img {height: 40px; width: 40px; border-radius: 10px}
+
+
+a {   font-family: "Anaheim", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #0a0c32;
+  text-decoration: none;
+  font-size: 1.2em;}
+  
+
+#volver {padding: 0.8em;
+    background-color: #ff5e00;
+    width: fit-content;
+    align-self: flex-start;
+    color: white;}

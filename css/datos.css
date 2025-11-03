@@ -1,13 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Datos</title>
-</head>
-<body>
-    <!-- Aquí va el contenido visible -->
-    <h1>Encabezado principal</h1>
-    <p>Este es un párrafo de ejemplo.</p>
-</body>
-</html>
+/* Colores de la paleta */
+:root {
+  --verde-reseda: #757761;
+  --regaliz: #120309;
+  --verde-sgbus: #9BE564;
+  --bigaro: #CCC9E7;
+  --cornell-rojo: #BF211E;
+}
+
+/* Fondo general */
+body {
+  background-color: var(--regaliz);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+section.contenedor-general {
+    background-color: var(--verde-sgbus);
+    border: 3px solid var(--cornell-rojo);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Contenedores internos */
+.contenedor {
+background-color: var(--bigaro);
+    color: var(--cornell-rojo);
+    width: 85%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {font-family: "Anaheim", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3em;}
+
+
+
+ a {   font-family: "Anaheim", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #293416;
+  text-decoration: none;
+  font-size: 1.2em;}
+  
+
+#volver {padding: 0.8em;
+    background-color: #ff5e00;
+    width: fit-content;
+    align-self: flex-start;
+    color: white;}

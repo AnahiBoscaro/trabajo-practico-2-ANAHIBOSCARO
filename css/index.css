@@ -7,6 +7,7 @@ body {background-color: black;}
   display: flex;
   flex-direction: column;
 width: 1150px; min-height: 1500px;
+align-items: center;
 }
 
 
@@ -127,7 +128,7 @@ font-size: 2em}
   background-image: url("../img/naturaleza/tarjeta-naturaleza.jpg");}
 
 .tarjeta.urbana {
-  background-image: url("../img/urbanas/tarjeta-urbana.jpg");}
+  background-image: url("../img/urbana/tarjeta-urbana.jpg");}
 
 .tarjeta.perfo {
   background-image: url("../img/perfo/tarjeta-perfo.jpg");}
@@ -150,3 +151,31 @@ font-size: 2em}
   padding: 10px 15px;
   border-radius: 5px;
 }
+
+
+
+footer {height: 70px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    align-items: center;
+    position: relative;
+    top: 70px;}
+
+footer div {height: 50px;
+    width: 300px;
+    display: flex;
+    margin: 1em;
+    justify-content: space-evenly;
+    align-items: center;}
+
+footer img {height: 40px; width: 40px; border-radius: 10px}
+
+footer a {  font-family: "Coda", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(249 249 249);
+  text-decoration: none;
+  font-size: 1.2em;}
+
