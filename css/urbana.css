@@ -1,12 +1,77 @@
-body {background-color: #052326;}
+body {background-color: #052326 !important;}
+
+/* ===== Estilos generales del menú ===== */
+.nav {
+    display: flex;
+  justify-content: center;              /* Centra los ítems */
+  background-color: #f6f7f8;            /* Fondo gris muy claro */
+  padding: 10px 0;
+  border-radius: 0;                     /* Sin bordes redondeados */
+}
+
+/* ===== Estilos de los links ===== */
+.nav-link {
+  color: #555 !important;                          /* Gris suave */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 0 15px;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+/* Quita el fondo azul de Bootstrap del activo */
+.nav-pills .nav-link.active {
+  background-color: transparent !important;
+  color: black !important;
+  font-weight: 600; 
+}
+
+/* ===== Efecto hover: texto en negrita + línea naranja abajo ===== */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: #555 ;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: #000;            /* Negro al pasar el mouse */
+  font-weight: 600;       /* Negrita */
+}
+
+.nav-link:hover::after {
+  width: 100%;            /* Muestra la línea */
+}
+
+/* ===== Ajustes del menú desplegable ===== */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #fff0e0;
+  font-weight: 600;
+  color: #000;
+}
+
+
+
 
 h2  {font-family: "Coda";
-    font-weight: 800; 
+    font-weight: 800 !important; 
     font-style: normal; 
-    font-size: 5em; 
+    font-size: 5em !important; 
     color: #ff5e00; 
     margin: 0;
-    margin-top: 0.5em; 
+    margin-top: 0.5em !important; 
     text-align: right;
     position: relative;
     letter-spacing: 30px;
@@ -57,19 +122,12 @@ footer img {height: 40px; width: 40px; border-radius: 10px}
 
 
 
- a {   font-family: "Anaheim", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: #293416;
+ a {font-family: "Coda";
+    font-style: normal;
+    color: #293416 !important;
   text-decoration: none;
   font-size: 1.2em;}
   
 
-#volver {padding: 0.8em;
-    background-color: #ff5e00;
-    width: fit-content;
-    position: relative;
-    left: 100px;
-    color: white;}
+
 

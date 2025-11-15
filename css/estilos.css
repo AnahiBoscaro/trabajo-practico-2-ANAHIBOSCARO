@@ -1,0 +1,580 @@
+
+
+/* BODY --> FONDO NEGRO: INDEX, MUSICA */
+#fondoNegro {background-color: black !important;} 
+
+
+/*=========================================== */
+/* PAGINA PRINCIPAL */
+/*=========================================== */
+
+
+/* CONTENEDOR GRANDE ----------------------*/
+#contenedorGeneralIndex {
+  background-color: #F0F0F0; 
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+width: 1150px; min-height: 1500px;
+align-items: center;}
+
+
+/* CONTENEDOR PRIMERA MITAD ----------------*/
+#contenedor1 {height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+
+/* CONTENEDOR "Portfolio" + 2025 + imagen */
+#contenedor1A {display: flex;
+    width: 1100px;
+    height: 450px;
+    flex-wrap: nowrap;}
+
+
+/* CONTENEDOR PALABRA PORTFOLIO */
+#p-portfolio {
+  font-family: "Coda", system-ui;
+  font-weight: 800;
+ font-style: normal;
+font-size: 6em;}
+
+#c-portfolio {position: relative;
+    top: 130px;
+    left: 130px;
+    z-index: 2;
+    width: 800px;
+    height: 280px;}
+
+
+/* CONTENEDOR AÑO */
+#p-año {
+  font-family: "Coda", system-ui;
+  font-weight: 800;
+ font-style: normal;
+ color: #167A04; 
+font-size: 2em}
+
+
+/* CONTENEDOR IMAGEN MOLINO */
+#c-imagen {position: relative;
+    right: 60px;
+    z-index: 1;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;  }
+
+#imgMolino { height: 450px ; margin-right: 2em}
+
+
+/* CONTENEDOR NOMBRE + FOTOGRAFIA */
+#contenedor1B {position: relative;
+    left: 50px;
+    top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;}
+
+#p-nombre , #p-fotografia {  
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 4em;}
+
+
+
+/* CONTENEDOR SEGUNDA MITAD -------------- */
+#contenedor2 {
+  height: 700px;
+  width: 1150px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;}
+
+
+/* Cada columna - TAMBIEN APLICA A LA PAGINA DE FOTOS!!!*/
+.col {
+  height: 300px;
+  width: 260px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;}
+
+/*centrado*/
+.row {justify-content: center;}
+
+
+/* El link de cada tarjeta (ocupa todo el espacio) */
+.tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+/* Efecto hover */
+.tarjeta:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);}
+
+
+
+/* Fondo por cada categoría */
+.tarjeta.fotos {
+  background-image: url("../img/musica/tarjeta-musica.jpg");}
+
+.tarjeta.sobre-mi {
+  background-image: url("../img/naturaleza/tarjeta-naturaleza.jpg");}
+
+.tarjeta.inspiraciones {
+  background-image: url("../img/tarjeta-inspiraciones.jpg");}
+
+.tarjeta.reflexiones {
+  background-image: url("../img/tarjeta-reflexiones.jpg");}
+
+.tarjeta.contacto {
+  background-image: url("../img/tarjeta-contacto.jpg");}
+
+.tarjeta.datos {
+  background-image: url("../img/tarjeta-datos.jpg");}
+
+
+
+/* Texto centrado con sombra para que se lea mejor */
+.tarjeta span {
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 500;
+    text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+/* ====================================================== */
+/* ===== Estilos generales del PIE DE PAGINA ===== */
+
+/* CONTENEDOR GENERAL DEL FOOTER */
+footer {height: 70px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+
+/* color especifico de para el index*/
+#pieIndex {background-color: green !important;;}
+#pieIndex a {color: white !important;;}
+
+/* color especifico de para pag Fotos*/
+#pieFotos {background-color: #f6f7f8 !important;;} /* Fondo gris muy claro */
+#pieFotos a { color: #293416 !important;}
+
+/* color especifico de para pag Fotos Musica*/
+#pieMusica {background-color: #05362f !important;}
+#pieMusica a {color: #dadb86 !important;}
+
+#pieNaturaleza {background-color: #dfaf00 !important;;}
+#pieNaturaleza a {color: #293416 !important;;}
+
+#pieUrbana { background-color: #ff5e00 !important;} /* Fondo naranja */
+ #pieUrbana a {color: #293416 !important;}
+
+/* CONTENEDOR DE CADA RED (instagram y behance)*/
+footer div {height: 50px;
+    width: 300px;
+    display: flex;
+    margin: 1em;
+    justify-content: space-evenly;
+    align-items: center;}
+
+/* iconos */
+footer img {height: 40px; width: 40px; border-radius: 10px}
+
+/* links */
+footer a {   font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 1.7em;}
+
+
+
+
+/* ====================================================== */
+/* ===== Estilos generales del MENU DE NAVEGACION ===== */
+/* ===== en todas las paginas menos en la principal ===== */
+
+.nav {position: relative; top: 10px;
+  justify-content: center;              
+  background-color: #f6f7f8;      /* Gris clarito */      
+  padding: 10px 0;
+  border-radius: 0;                     
+}
+
+/* ===== Estilos de los links ===== */
+.nav-link {
+  color: #555 !important;     /* Gris oscuro */                     
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 0 15px;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+/* Quita el fondo azul de Bootstrap del activo */
+.nav-pills .nav-link.active {
+  background-color: transparent !important;
+  color: black !important;
+  font-weight: 600; 
+}
+
+/* ===== Efecto hover: texto en negrita + línea abajo ===== */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: #555 ;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: #000;            /* Negro al pasar el mouse */
+  font-weight: 600;       /* Negrita */
+}
+
+.nav-link:hover::after {
+  width: 100%;            /* Muestra la línea */
+}
+
+/* ===== Ajustes del menú desplegable ===== */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #fff0e0;
+  font-weight: 600;
+  color: #000;
+}
+
+
+
+
+
+/*=========================================== */
+/* PAGINA FOTOS */
+/*=========================================== */
+
+#contenedorGeneralFotos {
+    height: 500px;
+    width: 1200px;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;}
+
+
+/* COLUMNAS YA MODIFICADAS CON LOS ESTILOS DE LA PAGINA PRINCIPAL (mas arriba, buscar ".col") */
+
+/* Fondo por cada categoría */
+.tarjeta.musica {
+  background-image: url("../img/musica/tarjeta-musica.jpg");}
+
+.tarjeta.naturaleza {
+  background-image: url("../img/naturaleza/tarjeta-naturaleza.jpg");}
+
+.tarjeta.urbana {
+  background-image: url("../img/urbana/tarjeta-urbana.jpg");}
+
+.tarjeta.perfo {
+  background-image: url("../img/perfo/tarjeta-perfo.jpg");}
+
+
+/*=========================================== */
+/* SUB-SECCIONES DENTRO DE FOTOS */
+/*=========================================== */
+
+/* TITULOS Y CONTENEDORES GENERALES */
+
+.titulo  {font-family: "Coda";
+    font-weight: 800 !important; 
+    font-style: normal; 
+    font-size: 5em !important; 
+    margin: 0;
+    margin-top: 0.5em !important; 
+    text-align: center;
+    word-spacing: 150px;
+    letter-spacing: 10px;}
+
+.tMusicaEnVivo {color: #dadb86;}
+
+.tNaturaleza {color: #dfaf00; letter-spacing: 30px;}
+
+.tUrbana { color: #ff5e00; 
+    text-align: right;
+    position: relative;
+    letter-spacing: 30px;
+    right: 55px;}
+
+
+
+ /*=========================================== */
+/* LAYOUT SUB-SECCION MUSICA */
+
+#contenedorGeneralMusica {
+  background-color: #F0F0F0; 
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 1150px; min-height: 1500px;}
+
+.musica  { 
+  max-width:1100px; width:1100px; 
+  height:800px; min-height:500px; 
+  display: flex; justify-content: space-evenly;}
+
+.musica img {height: 550px;}
+
+
+.c-texto {height: 80px; 
+         display: flex;
+          align-items: center;
+          font-family: "Anaheim", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1em;}
+
+
+
+.musica.c-par-1 { height: 1000px; }
+
+#c-img-txt-voz-saturno  {max-width:500px; height: 600px;                 /*-- VERTICAL*/
+                        display: flex; flex-direction: column; 
+                        position: relative;     top: 30px;}  
+
+
+ 
+#c-img-txt-heroes {max-width:500px; height: 600px;                 /*-- VERTICAL*/
+                  display: flex; flex-direction: column; 
+                  position: relative; top: 330px} 
+
+
+
+.musica.c-par-2 { height: 700px; }
+#c-img-txt-kaptiva1 {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; 
+                    position: relative; bottom: 160px;} 
+ 
+#c-img-txt-kaptiva2 {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; } 
+ 
+
+
+
+.c-img-txt-invierno {width: 1000px;                                /*-- HORIZONTAL*/
+                     height: 450px;
+                    display: flex;
+                     flex-direction: column;
+                     align-items: flex-end;
+                     justify-content: flex-start } 
+.c-img-txt-invierno img { height: 350px }  
+
+
+
+.musica.c-par-3 {height: 650px}
+#c-img-txt-leal {max-width:500px; height: 600px;                 /*-- VERTICAL*/
+                display: flex; flex-direction: column; 
+                position: relative; bottom: 600px; } 
+ 
+
+#c-img-txt-jovencita {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                      display: flex; flex-direction: column;} 
+
+
+
+           
+.musica.c-par-4 { height: 650px; }
+.c-img-txt-camionero {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; 
+                    position: relative; bottom: 300px;} 
+ 
+#c-img-txt-santos {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; } 
+
+
+
+
+
+.musica.c-par-5 { height: 650px; }
+#c-img-txt-rockstar {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; 
+                    position: relative; bottom: 300px;} 
+ 
+#c-img-txt-radical {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; } 
+
+
+
+
+
+ 
+.c-img-txt-micky-1 {max-width:1000px; height: 700px;                 /*-- HORIZONTAL*/
+                    display: flex; flex-direction: column; 
+                    align-items: flex-end; justify-content: flex-start;} 
+
+.c-img-txt-micky-2 {max-width:1000px; height: 700px;                 /*-- HORIZONTAL*/
+                    display: flex; flex-direction: column; 
+                   } 
+
+.c-img-txt-micky-3 {max-width:1000px; height: 700px;                 /*-- HORIZONTAL*/
+                    display: flex; flex-direction: column; 
+                    align-items: flex-end; justify-content: flex-start;} 
+
+
+
+.musica.c-par-6 {height: 650px} 
+#c-img-txt-metal {max-width:500px; height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; } 
+ 
+#c-img-txt-bajo-saturno {max-width:500px;  height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column;} 
+ 
+
+
+
+ 
+.c-img-txt-physical {width:1000px; height: 700px;                 /*-- HORIZONTAL*/
+                    display: flex; flex-direction: column; 
+                    justify-content: flex-start;}    
+
+
+
+ .musica.c-par-7 {justify-content: flex-end;
+    gap: 35px; height: 650px}
+#c-img-txt-interior {max-width:500px;  height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; } 
+ 
+#c-img-txt-batero {max-width:500px;   height: 500px;                 /*-- VERTICAL*/
+                    display: flex; flex-direction: column; } 
+
+
+
+
+
+.c-img-txt-bajo-nacional {max-width:1000px; height: 600px;                 /*-- HORIZONTAL*/
+                    display: flex; flex-direction: column; 
+                    justify-content: flex-start; } 
+.c-img-txt-bajo-nacional img {height: 450px}
+
+
+
+
+
+
+ /*=========================================== */
+/* LAYOUT SUB-SECCION NATURALEZA */
+
+/*fondo del BODY (VERDE OLIVA) */
+#fondoOliva {background-color: #293416 !important;} 
+
+
+#contenedorGeneralNaturaleza {
+  background-color: #d3fdc5; 
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 1150px; min-height: 1500px;}
+
+
+.naturaleza { 
+  max-width:1100px; width:1100px; 
+  height:650px; min-height:500px; 
+  display: flex; justify-content: space-evenly;}
+
+.naturaleza img {height: 550px;}
+
+
+.naturaleza.c-par-1 {padding: 1em }
+#c-imagen-calandria img {height: 300px}
+
+
+#c-imagen-jugando { position: relative; bottom: 300px ;}
+
+#c-imagen-manada img {height: 350px; 
+                    position: relative; bottom: 200px}
+                    
+#c-imagen-chape { position: relative; bottom: 200px ;}
+
+
+
+
+
+ /*=========================================== */
+/* LAYOUT SUB-SECCION URBANA */
+
+/*fondo del BODY (AZUL OSCURO) */
+#fondoAzul {background-color: #052326 !important;}
+
+#contenedorGeneralUrbana {
+  background-color: #F0F0F0; 
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+width: 1150px; height: 2500px;}
+
+#contenedorFotosUrbana { display: flex;
+flex-direction: row;
+  align-items: stretch;}
+
+
+.columnaUrbana { 
+  max-width:600px; width:50%; 
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 2em;
+  align-items: center;}
+
+.columnaUrbana img {width: 500px;}
+
+
+
+
+  
+
+
+
+

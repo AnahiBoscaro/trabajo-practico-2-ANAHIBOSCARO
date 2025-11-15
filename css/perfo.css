@@ -27,27 +27,92 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  color: white; /* texto legible sobre el video */
   position: relative;
-  z-index: 1;display: flex;
-justify-content: center;  
+  z-index: 1;
+  display: flex;
+  justify-content: center;  
+    flex-direction: column;
+    align-items: center;
 }
 
 
+
+/* ===== Estilos generales del menú ===== */
+nav {width: 1200px}
+.nav {
+    display: flex;
+  justify-content: center;              /* Centra los ítems */
+  background-color: #f6f7f8;            /* Fondo gris muy claro */
+  padding: 10px 0;
+  border-radius: 0;                     /* Sin bordes redondeados */
+}
+
+/* ===== Estilos de los links ===== */
+.nav-link {
+  color: #555 !important;                          /* Gris suave */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 0 15px;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+/* Quita el fondo azul de Bootstrap del activo */
+.nav-pills .nav-link.active {
+  background-color: transparent !important;
+  color: black !important;
+  font-weight: 600; 
+}
+
+/* ===== Efecto hover: texto en negrita + línea naranja abajo ===== */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: #555 ;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: #000;            /* Negro al pasar el mouse */
+  font-weight: 600;       /* Negrita */
+}
+
+.nav-link:hover::after {
+  width: 100%;            /* Muestra la línea */
+}
+
+/* ===== Ajustes del menú desplegable ===== */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #fff0e0;
+  font-weight: 600;
+  color: #000;
+}
+
 h2  {font-family: "Coda";
-    font-weight: 800; 
+    font-weight: 800 !important; 
     font-style: normal; 
-    font-size: 5em; 
-    color: #ff5e00; 
-    margin: 0;
+    font-size: 4em !important; 
+    color: #482612; 
+    margin: 0 !important;
     letter-spacing: 10px;}
 
 h4 {font-family: "Coda";
-    font-weight: 800; 
-    font-style: normal; 
-    font-size: 3em; 
-    color: #ff5e00; 
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 2.5em !important;
+    color: #482612;
     margin: 0;
     text-align: right;
     letter-spacing: 10px;}
@@ -56,10 +121,13 @@ h4 {font-family: "Coda";
     display: flex;
     width: 800px;
     flex-direction: column;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.4)}
+
+
 section {
   width: 800px;
-  height: 700px;
+  height: 650px;
   margin: 0 auto 100px auto; /* centrado horizontal y espacio entre secciones */
   display: flex;
   flex-direction: column;
@@ -69,8 +137,7 @@ section {
 }
 
 .contenedor-original {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px;}
 
 .contenedor-original img {
   width: 400px;
@@ -115,9 +182,9 @@ section {
 
 /* texto debajo de cada miniatura */
 .contenedor-variaciones p {
-  font-size: 14px;
+  
   margin-top: 5px;
-  color: #333;
+font-weight: bold;
 }
 
 #grito .contenedor-original img,
@@ -128,13 +195,16 @@ section {
 
 
 footer { height: 70px;
-    width: 800px;
+    width: 730px;
     display: flex;
     justify-content: space-between;
-    background-color: #3c3607;
+    background-color: #f6f7f8;
     align-items: center;
-    position: relative;
    }
+
+footer a {color: #482612 !important;
+  font-size: 1.2em;
+text-decoration: none; }
 
 footer div {height: 50px;
     width: 300px;
@@ -145,19 +215,11 @@ footer div {height: 50px;
 
 footer img {height: 40px; width: 40px; border-radius: 10px}
 
-a {  font-family: "Anaheim", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(133 244 255);
+a {font-family: "Coda";
+    font-style: normal;
+    color: #293416 !important;;
   text-decoration: none;
   font-size: 1.2em;}
   
-
-#volver {padding: 0.8em;
-    background-color: #3c3607;
-    width: fit-content;
-    align-self: flex-start;
-    color: white;}
 
 

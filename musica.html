@@ -11,22 +11,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Coda:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anaheim:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/musica.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 
-<body>
-
-<header> <h2>MÚSICA EN VIVO</h2> </header>
-
-<div id="volver">
-<a href="index.html"> ← VOLVER </a>
-</div>
-
-<div id="contenedorGeneral">
+<body id="fondoNegro">
 
 
-  <section id="c-par-1">
+ <!-- MENU DE NAVEGACION ============ -->
+
+<nav>
+<ul class="nav nav-pills">
+  <!-- Ítem 1: Home -->
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+  </li>
+
+  <!-- Ítem 2: Fotos (con submenú desplegable) -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fotos</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="musica.html">Música</a></li>
+      <li><a class="dropdown-item" href="naturaleza.html">Naturaleza</a></li>
+      <li><a class="dropdown-item" href="urbana.html">Urbana</a></li>
+      <li><a class="dropdown-item" href="perfo.html">Performática</a></li>
+    </ul>
+  </li>
+
+  <!-- Ítem 3: Sobre mí -->
+  <li class="nav-item">
+    <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+  </li>
+
+  <!-- Ítem 4: Reflexiones -->
+  <li class="nav-item">
+    <a class="nav-link" href="reflexiones.html">Reflexiones</a>
+  </li>
+
+  <!-- Ítem 5: Inspiraciones -->
+  <li class="nav-item">
+    <a class="nav-link" href="inspiraciones.html">Inspiraciones</a>
+  </li>
+
+  <!-- Ítem 6: Datos -->
+  <li class="nav-item">
+    <a class="nav-link" href="datos.html">Datos</a>
+  </li>
+
+  <!-- Ítem 7: Contacto -->
+  <li class="nav-item">
+    <a class="nav-link" href="contacto.html">✉</a>
+  </li>
+</ul>
+</nav>
+
+
+
+
+
+<header> <h2 class="titulo tMusicaEnVivo">MÚSICA EN VIVO</h2> </header>
+
+
+
+<div id="contenedorGeneralMusica">
+
+
+  <section class="musica c-par-1">
     <div id="c-img-txt-voz-saturno">
       <div id="c-imagen-voz-saturno"><img src="img/musica/voz-saturno.jpg" alt="chicx cantando"></div>
       <div class="c-texto">Orbitando Saturno. 9 de Agosto de 2025. <br> En Ocenario Club Cultural.</div>
@@ -38,7 +89,7 @@
   </section>
 
 
-  <section id="c-par-2" >
+  <section class="musica c-par-2" >
     <div id="c-img-txt-kaptiva1">
       <div id="c-imagen-kaptiva1"><img src="img/musica/kaptiva1.jpg" alt="chicx gritando con un microfono"></div>
       <div class="c-texto">Kaptiva. 26 de Octubre de 2025. <br> En El Portal.</div>
@@ -50,19 +101,19 @@
   </section>
 
 
- <section id="c-img-txt-invierno">
+ <section class="musica c-img-txt-invierno">
     <div id="c-imagen-invierno"><img src="img/musica/invierno.jpg" alt="chicx tocando un bajo y otre la bateria"></div>
     <div class="c-texto">El Invierno de Morel. 9 de Agosto de 2025. <br> En Ocenario Club Cultural.</div>
   </section>
 
 
-  <section id="c-par-3">
+  <section class="musica c-par-3">
     <div id="c-img-txt-leal">
       <div id="c-imagen-leal"><img src="img/musica/leal.jpg" alt="chicx con guitarra"></div>
       <div class="c-texto">Leal y los seres de Jupiter. 3 de Octubre de 2025. 
         <br> En Huerta La Margarita.</div>
     </div>
-    <div id="c-img-txt-jovencita">
+    <div class="c-img-txt-jovencita">
       <div id="c-imagen-jovencita"><img src="img/musica/jovencita.jpg" alt="chicx cantando"></div>
       <div class="c-texto">Los Jóvenes de ayer. 6 de Septiembre de 2025. <br> En Moscú.</div>
     </div>
@@ -72,7 +123,7 @@
  
 
 
-  <section id="c-par-4">
+  <section class="musica c-par-4">
     <div id="c-img-txt-camionero">
       <div id="c-imagen-camionero"><img src="img/musica/camionero.jpg" alt="chicx cantando"></div>
       <div class="c-texto">Camionero. 18 de Septiembre de 2025 <br> En El Emergente.</div>
@@ -84,7 +135,7 @@
   </section>
 
 
-  <section id="c-par-5">
+  <section class="musica c-par-5">
     <div id="c-img-txt-rockstar">
       <div id="c-imagen-rockstar"><img src="img/musica/rockstar.jpg" alt="chicx tocando la guitarra"></div>
       <div class="c-texto">Los Santos Diurnos. 26 de Septiembre de 2025. <br> En Moscú.</div>
@@ -96,25 +147,25 @@
   </section>
 
 
-  <section id="c-img-txt-micky-1">
+  <section class="musica c-img-txt-micky-1">
     <div id="c-imagen-micky-1"><img src="img/musica/micky-1.jpg" alt="micky rodriguez en un show"></div>
     <div class="c-texto">Micky Rodriguez. 13 de Septiembre de 2025. <br> En El Galpón de Hurlingam.</div>
   </section>
 
 
-  <section id="c-img-txt-micky-2">
+  <section class="musica c-img-txt-micky-2">
       <div id="c-imagen-micky-2"><img src="img/musica/micky-2.jpg" alt="micky rodriguez en un show"></div>
       <div class="c-texto">Micky Rodriguez. 13 de Septiembre de 2025. <br> En El Galpón de Hurlingam.</div>
   </section>
 
 
-  <section id="c-img-txt-micky-3">
+  <section class="musica c-img-txt-micky-3">
       <div id="c-imagen-micky-3"><img src="img/musica/micky-3.jpg" alt="micky rodriguez en un show"></div>
       <div class="c-texto">Micky Rodriguez. 13 de Septiembre de 2025. <br> En El Galpón de Hurlingam.</div>
   </section>
 
 
-  <section id="c-par-6">
+  <section class="musica c-par-6">
     <div id="c-img-txt-metal">
       <div id="c-imagen-metal"><img src="img/musica/metal.jpg" alt="chicx tocando la guitarra"></div>
       <div class="c-texto">Numetal Fest. 22 de Agosto de 2025. <br> En La Sala de Morón.</div>
@@ -126,13 +177,13 @@
   </section>
 
 
-  <section id="c-img-txt-physical">
+  <section class="musica c-img-txt-physical">
     <div id="c-imagen-physical"><img src="img/musica/physical.jpg" alt="chicx tocando la guitarra"></div>
     <div class="c-texto">Physical Grafitti. 12 de Septiembre de 2025. <br> En El Galpón de Hurlingam.</div>
   </section>
 
 
-  <section id="c-par-7">
+  <section class="musica c-par-7">
     <div id="c-img-txt-interior">
       <div id="c-imagen-interior"><img src="img/musica/interior.jpg" alt="chicx tocando el piano"></div>
       <div class="c-texto">La Jam Nacional. 21 de Agosto 2025. <br> En Lucille.</div>
@@ -144,13 +195,16 @@
   </section>
 
 
-  <section id="c-img-txt-bajo-nacional">
+  <section class="musica c-img-txt-bajo-nacional">
     <div id="c-imagen-bajo-nacional"><img src="img/musica/bajo-nacional.jpg" alt="chicx tocando el bajo"></div>
     <div class="c-texto">La Jam Nacional. 21 de Agosto 2025. <br> En Lucille.</div>
   </section>
 
 
-<footer>
+
+
+
+<footer id="pieMusica">
   <div>
   <img id="logoInstagram" src="img/logo-instagram.jpg" alt="logo de instagram">
   <a href="https://www.instagram.com/foto.ana.grafia___/"> @foto.ana.grafia___ </a>
@@ -164,7 +218,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </div>
 
 
