@@ -4,7 +4,7 @@
 #fondoNegro {background-color: black !important;} 
 
 
-/*=========================================== */
+/*====================================================================================== */
 /* PAGINA PRINCIPAL */
 /*=========================================== */
 
@@ -169,7 +169,7 @@ font-size: 2em}
 
 
 
-/* ====================================================== */
+/* ================================================================================================= */
 /* ===== Estilos generales del PIE DE PAGINA ===== */
 
 /* CONTENEDOR GENERAL DEL FOOTER */
@@ -180,23 +180,40 @@ footer {height: 70px;
     align-items: center;}
 
 
-/* color especifico de para el index*/
+/* color especifico PARA CADA SECCION Y SUB-SECCIONES*/
 #pieIndex {background-color: green !important;;}
 #pieIndex a {color: white !important;;}
 
-/* color especifico de para pag Fotos*/
+
+
 #pieFotos {background-color: #f6f7f8 !important;;} /* Fondo gris muy claro */
-#pieFotos a { color: #293416 !important;}
+#pieFotos a { color: #293416 !important;} 
 
-/* color especifico de para pag Fotos Musica*/
-#pieMusica {background-color: #05362f !important;}
-#pieMusica a {color: #dadb86 !important;}
+#pieMusica , #pieContacto {background-color: #05362f !important;} /* fondo turquesa */
+#pieMusica a , #pieContacto a {color: #dadb86 !important;} /* letras cremita */
 
-#pieNaturaleza {background-color: #dfaf00 !important;;}
-#pieNaturaleza a {color: #293416 !important;;}
+#pieNaturaleza {background-color: #dfaf00 !important;} /* Fondo mostaza */
+#pieNaturaleza a {color: #293416 !important;} /* letras oliva */
 
-#pieUrbana { background-color: #ff5e00 !important;} /* Fondo naranja */
- #pieUrbana a {color: #293416 !important;}
+#pieUrbana {background-color: #ff5e00 !important;} /* Fondo naranja */
+ #pieUrbana a {color: #293416 !important;} /* letras turquesa */
+
+#piePerfo {background-color: #f6f7f8;} /* Fondo blanco hueso */
+#piePerfo a {color: #482612 !important;} /* letras vino */
+
+
+
+#pieInspiraciones { background-color:#dadb86 ;} /* Fondo cremita amarillento */
+#pieInspiraciones a { color: #5a0505;}  /* Letras bordo */
+
+
+#pieSobreMi {background-color: #3B3670 !important;} /* Fondo violeta */
+#pieSobreMi a {color: #dadb86 !important;} /* letras cremita */
+
+
+#pieReflexiones {background-color: #e7e000 !important;/* Fondo mostaza */
+                margin: 0 auto} 
+#pieReflexiones a {color: #32533D !important;} /* letras verde oscuro */
 
 /* CONTENEDOR DE CADA RED (instagram y behance)*/
 footer div {height: 50px;
@@ -219,16 +236,19 @@ footer a {   font-family: "Cormorant Infant", serif;
 
 
 
-/* ====================================================== */
+/* ================================================================================================= */
 /* ===== Estilos generales del MENU DE NAVEGACION ===== */
 /* ===== en todas las paginas menos en la principal ===== */
 
+/* ===== menu hamburguesa Oculto arriba de 500px ===== */
+.menu-toggle { display: none; }
+
+/* ===== contenedor ===== */
 .nav {position: relative; top: 10px;
   justify-content: center;              
   background-color: #f6f7f8;      /* Gris clarito */      
   padding: 10px 0;
-  border-radius: 0;                     
-}
+  border-radius: 0;}
 
 /* ===== Estilos de los links ===== */
 .nav-link {
@@ -287,42 +307,10 @@ footer a {   font-family: "Cormorant Infant", serif;
 
 
 
-/*=========================================== */
-/* PAGINA FOTOS */
-/*=========================================== */
-
-#contenedorGeneralFotos {
-    height: 500px;
-    width: 1200px;
-    margin: 1em auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;}
-
-
-/* COLUMNAS YA MODIFICADAS CON LOS ESTILOS DE LA PAGINA PRINCIPAL (mas arriba, buscar ".col") */
-
-/* Fondo por cada categoría */
-.tarjeta.musica {
-  background-image: url("../img/musica/tarjeta-musica.jpg");}
-
-.tarjeta.naturaleza {
-  background-image: url("../img/naturaleza/tarjeta-naturaleza.jpg");}
-
-.tarjeta.urbana {
-  background-image: url("../img/urbana/tarjeta-urbana.jpg");}
-
-.tarjeta.perfo {
-  background-image: url("../img/perfo/tarjeta-perfo.jpg");}
-
-
-/*=========================================== */
-/* SUB-SECCIONES DENTRO DE FOTOS */
+/*====================================================================================== */
 /*=========================================== */
 
-/* TITULOS Y CONTENEDORES GENERALES */
+/* TITULOS */
 
 .titulo  {font-family: "Coda";
     font-weight: 800 !important; 
@@ -345,6 +333,66 @@ footer a {   font-family: "Cormorant Infant", serif;
     right: 55px;}
 
 
+.tPerfo {font-size: 4em !important; 
+    color: #482612;}
+
+#tInteractivo {font-family: "Coda";
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 2.5em !important;
+    color: #482612;
+    margin: 0;
+    text-align: right;
+    letter-spacing: 10px;
+    margin-bottom: 2em}
+
+.tSobreMi {color: #3B3670; 
+ font-size: 4em !important; 
+     word-spacing: 10px; 
+     letter-spacing: 0; }
+
+.tReflexiones {color: #e7e000; /*MOSTAZA*/
+ font-size: 4em !important; 
+     word-spacing: 10px; 
+     letter-spacing: 0; }
+
+
+
+
+
+/*====================================================================================== */
+/* PAGINA FOTOS */
+/*=========================================== */
+
+#contenedorGeneralFotos {
+    height: 500px;
+    width: 1200px;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;}
+
+
+/* COLUMNAS YA MODIFICADAS CON LOS ESTILOS DE LA PAGINA PRINCIPAL (mas arriba, buscar ".col") */
+
+/* Fondo por cada categoría */
+.tarjeta.fotoMusica {
+  background-image: url("../img/musica/tarjeta-musica.jpg");}
+
+.tarjeta.fotoNaturaleza {
+  background-image: url("../img/naturaleza/tarjeta-naturaleza.jpg");}
+
+.tarjeta.fotoUrbana {
+  background-image: url("../img/urbana/tarjeta-urbana.jpg");}
+
+.tarjeta.fotoPerfo {
+  background-image: url("../img/perfo/tarjeta-perfo.jpg");}
+
+/*====================================================================================== */
+/* SUB-SECCIONES DENTRO DE FOTOS */
+/*=========================================== */
 
  /*=========================================== */
 /* LAYOUT SUB-SECCION MUSICA */
@@ -552,11 +600,11 @@ width: 1150px; min-height: 1500px;}
   display: flex;
   flex-direction: column;
  align-items: center;
-width: 1150px; height: 2500px;}
+width: 1150px;}
 
-#contenedorFotosUrbana { display: flex;
-flex-direction: row;
-  align-items: stretch;}
+#contenedorFotosUrbana {display: flex;
+    width: 1150px;
+    height: 2500px;}
 
 
 .columnaUrbana { 
@@ -573,8 +621,881 @@ flex-direction: row;
 
 
 
+
+ /*=========================================== */
+/* LAYOUT SUB-SECCION PERFORMATICA */
+
+/* video de fondo */
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* hace que el video ocupe todo el fondo sin deformarse */
+  z-index: -1;        /* lo manda al fondo */
+}
+
+/* el BODY / contenido de la página encima */
+#bodyPerfo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;  
+    flex-direction: column;
+    align-items: center;}
+
+
+#contenedorGeneralPerfo {padding: 2em;     
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4)} /* blanco transparente */
+
+
+.seccionPerfo {
+  width: 800px;
+  height: 650px;
+  margin: 0 auto 100px auto; /* centrado horizontal y espacio entre secciones */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-original {
+  margin-bottom: 30px;}
+
+.contenedor-original img {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* VARIACIONES DE FILTROS */
+.img-variacion {
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 2px solid transparent;}
+
+.img-variacion:hover {
+  transform: scale(1.05);}
+
+.img-variacion.seleccionada {
+  border: 2px solid black;}
+
+/* contenedor de variaciones */
+.contenedor-variaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 100%;
+}
+
+.contenedor-variaciones div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-variaciones img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.contenedor-variaciones img:hover {
+  transform: scale(1.1);
+}
+
+/* cuando la imagen está seleccionada */
+.contenedor-variaciones img.seleccionada {
+  border: 2px solid black;
+}
+
+/* texto debajo de cada miniatura */
+.contenedor-variaciones p { margin-top: 5px;
+font-weight: bold;}
+
+.grito .contenedor-original img,
+.plegaria .contenedor-original img,
+.plenitud .contenedor-original img,
+.universo .contenedor-original img {width: 600px; height: auto;}
+
+
+
+
+
+
+  
+/*====================================================================================== */
+/* SECCION INSPIRACIONES */
+/*=========================================== */
+
+/*FONDO DEL BODY*/
+#fondoTurquesa {display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #05362f !important;}
+
+
+
+/* ESTILOS CARROUSEL ===== */
+.carousel-inner {
+  margin: 1em auto;
+width: 1250px; height: 650px;}
+
+
+.contenedor-slide {width: 1250px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+
+/* ACOMODAR LAS FOTOS */
+.imagen-vertical {max-width: 750px;
+    margin: 2em;}
+.imagen-horizontal {margin: 2em}
+.carousel-item img {max-height: 500px}
+
+
+/* TEXTO ============= */
+
+/*CONTENEDOR*/
+.texto {width: 400px; 
+    max-height: 550px;
+     color: white;}
+
+
+/*NOMBRE DEL ARTISTA*/
+.texto h2 {font-family: "Coda";
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 5em !important;
+    color: #dadb86}
+
+/*DATOS DEL ARTISTA*/
+.texto h4 {font-family: "Homenaje", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+/*SINOPSIS DEL ARTISTA*/
+.texto p {font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;}
+
+
+
+/*ARROBA DE LOS INSTAGRAM */
+.imagen-texto {width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;}
+
+.usuarioArtista {color: white; padding: 1em;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;;font-size: 1.3em;} 
+
+.instagram {align-self: center;} 
+
+.triple {justify-content: center;} 
+
+
+/* ESTILO ESPECIFICO PARA LA FOTO DE LAS AVES*/
+#aves {display: flex; 
+      justify-content: center;
+  width: 600px;}
+.foto-ave {max-width: 300px}
+
+
+
+
+/*====================================================================================== */
+/* SECCION CONTACTO */ 
+/*=========================================== */
+
+#contenedorGeneralContacto {display: flex; 
+  flex-direction: column;
+    align-items: center;}
+
+.bg-light { background-color: #0a0c32 !important;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;}
+
+#contenedorFormulario {
+  background-color: #7fc394;
+    width: 800px;
+    border: solid black;
+    border-radius: 45px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  margin: 1.5em auto;}
+
+
+.text-center {
+    text-align: left !important;}
+
+
+#contenedorFormulario h2 {font-family: "Coda";
+    font-weight: 800; 
+    font-style: normal; 
+    font-size: 3em; 
+    color: #0a0c32; }
+
+.form-label {font-family: "Anaheim", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; font-size: 1.3em}
+
+form {width: 650px}
+  
+
+
+/*====================================================================================== */
+/* SECCION DATOS */ 
+/*=========================================== */
+
+
+/* Fondo general */
+#fondoBordo {
+  background-color: #120309 !important;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+}
+
+/* Contenedor principal */
+#contenedorGeneralDatos {
+    background-color: #9BE564; /*verde lima*/
+    border: 3px solid #718219; /*verde oliva*/
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; 
+    margin: 1.5em;
+}
+
+/* Contenedores internos */
+.contenedorDatos {
+    width: 85%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    background-color: #ecf9c3; /*cremita*/
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;}
+
+.contenedorDatos p {font-family: "Anaheim", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3em; 
+  margin: 0}
   
 
 
 
 
+/*====================================================================================== */
+/* SECCION SOBRE MI */ 
+/*=========================================== */
+
+/*FONDO DEL BODY*/ 
+#fondoOlivaClaro {background-color: #C0DE8A}
+
+#contenedorGeneralSobreMi { display: flex;
+align-items: center; 
+flex-direction: column;
+width: 1150px; 
+min-height: 1500px; 
+margin: 0 auto;
+padding-top: 50px;}
+
+#contenedorTextoSobreMi {display: flex;
+    width: 950px;
+    justify-content: space-around;
+    margin: 1.5em;}
+
+.columna { width: 450px;
+    text-align: justify; 
+    padding: 1EM;
+    background-color: #f6f7f8; } /*fondo blanco hueso*/
+
+
+/* imagenes */
+.columna img  {max-width: 350px; margin: 1em;}
+
+
+
+
+
+
+/*====================================================================================== */
+/* SECCION REFLEXIONES */ 
+/*=========================================== */
+
+/* FONDO DEL BODY */ 
+#fondoLila {background-color: #875454} 
+
+
+
+
+/* CONTENEDOR DEL ACORDEON */ 
+#acordionFotografia {width: 800px; margin: 1em auto;}
+
+
+/* item entero */ 
+.accordion-item {
+  border: 3px solid rgb(27 52 27);}
+
+/* titulo del item */ 
+.accordion-button {font-size: 0.7em; 
+  color: white;
+  font-family: "Coda", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #32533D;} /*verde oscuro */ 
+
+/* cuando está seleccionado */ 
+.accordion-button:not(.collapsed) { color: white; 
+  background-color: #32533D;
+    font-size: 1em;}
+
+/* cuerpo */ 
+.accordion-body {background-color: #5E9047; /* verde claro */ 
+  color:  black;     
+  font-size: 1.2em;
+  font-family: "Anaheim", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;}
+
+
+
+
+
+
+
+
+
+
+/*====================================================================================== */
+/*====================================================================================== */
+/*====================================================================================== */
+/* MEDIA QUERYS */ 
+/*=========================================== */
+
+
+
+@media (max-width: 500px) {
+
+
+/* ======================================= */
+/* ===== MENÚ HAMBURGUESA ====== */
+
+nav {width: 100%}
+  /* Mostrar el botón hamburguesa */
+
+  .menu-toggle {
+    display: block;
+    font-size: 30px;
+    border: none;}
+
+  /* Ocultar el menú por defecto */
+  .nav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* Menú desplegado */
+  .nav.open {
+    display: flex;
+    background: #f6f7f8;
+    padding: 0;
+  }
+
+  /* Dropdown corregido para vertical */
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+  }
+
+
+
+/*=======================================*/
+/*===== PIE DE PAGINA ======*/
+footer {width: 100%; height: fit-content;
+        flex-direction: column; }
+
+footer img {height: 20px; width: 20px;}
+
+footer a {font-size: 1em;}
+
+footer div { height: 30px; width: 200px;
+    margin: 0; justify-content: space-around;}
+
+
+
+
+
+/*=======================================*/
+/*===== PAG INDEX ======*/
+
+  /* CONTENEDOR GENERAL */
+  #contenedorGeneralIndex {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    min-height: auto; }
+
+  /* PRIMERA MITAD -------------------------------------*/
+  #contenedor1 {
+    height: auto;
+    align-items: center;
+    justify-content: center; }
+
+  /* Se apilan PORTFOLIO + IMAGEN */
+  #contenedor1A {
+    flex-direction: column;
+    width: 100%; height: auto;
+    align-items: center; }
+
+
+  /* PALABRA PORTFOLIO */
+  #p-portfolio { font-size: 3.7em; 
+            text-align: center; }
+
+  #c-portfolio { position: static;
+    width: 100%; height: auto;
+    text-align: center;
+    margin-bottom: 10px;}
+
+
+  /* IMAGEN */
+  #c-imagen { position: static;
+    width: 100%; height: auto;
+    justify-content: center;
+    margin-top: 10px;}
+
+  #imgMolino { height: auto; width: 90%; 
+    margin-right: 0;}
+
+  /* NOMBRE + FOTOGRAFIA */
+  #contenedor1B {
+    position: static;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;}
+
+#p-nombre, #p-fotografia {font-size: 3em; }
+
+
+  /* SEGUNDA MITAD -------------------------------------*/
+  #contenedor2 {
+    width: 100%; height: auto;
+    padding: 10px 0;
+    justify-content: center;}
+
+  /* Bootstrap row */
+  .row {
+    row-gap: 15px;
+    justify-content: center !important;}
+
+  /* Las columnas se vuelven 2 por fila */
+.row-cols-4 > * { flex: 0 0 50%;  max-width: 50%;}
+
+  /* TARJETAS */
+.col { width: 100px; height: 180px;  margin: 5px;}
+
+.tarjeta { border-radius: 6px; background-size: cover;}
+
+.tarjeta span { font-size: 0.9em; padding: 6px 8px;}
+
+.text-center { margin-bottom: 1em;}
+
+
+
+
+/*=======================================*/
+/*===== PAG REFLEXIONES ======*/
+
+/*===== titulo ======*/
+.tReflexiones {font-size: 2em !important}
+
+/*===== acordeon ======*/
+#acordionFotografia {width: 90%;}
+
+
+
+
+/*=======================================*/
+/*===== PAG FOTOS ======*/
+
+  #contenedorGeneralFotos {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    min-height: auto; }
+
+
+
+/*=======================================*/
+/*===== PAG MUSICA EN VIVO ======*/ 
+
+ /* --- CONTENEDOR GENERAL --- */
+#contenedorGeneralMusica {
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* --- TITULO --- */
+.tMusicaEnVivo  {font-size: 4em !important; 
+     word-spacing: 0; 
+    letter-spacing: 5px;}
+
+/* --- TODAS LAS SECCIONES .musica --- */
+.musica {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+position: static !important;
+margin: 1em;}
+
+.c-par-1, .c-par-2, .c-par-3,
+.c-par-4, .c-par-5, .c-par-6,
+.c-par-7 {gap:2em}
+
+
+/* --- TODAS LAS IMÁGENES --- */
+.musica img {
+    width: 100% !important;
+    height: auto !important;    /* mantiene proporción */
+    max-height: none !important;}
+
+
+/* --- CONTENEDORES DE CADA FOTO + TEXTO --- */
+.musica div,
+.musica section,
+.musica article,
+.musica .c-img-txt-invierno,
+.musica .c-img-txt-micky-1,
+.musica .c-img-txt-micky-2,
+.musica .c-img-txt-micky-3,
+.musica .c-img-txt-bajo-nacional {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;}
+
+
+/* --- TEXTO --- */
+.c-texto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+
+
+/*=======================================*/
+/*===== PAG NATURALEZA ======*/
+
+/* titulo */
+.tNaturaleza  {font-size: 3em !important; 
+    letter-spacing: 5px;}
+
+/* El contenedor general */
+    #contenedorGeneralNaturaleza {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;        
+    }
+  
+  /* apilar */
+ .naturaleza {
+        width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+position: static !important;
+margin: 1em; }
+
+
+ .naturaleza img {padding: 0.5em; margin: 0 auto;         
+        max-width: 98%;
+        height: auto;}
+
+
+/*sacar las posiciones relativas*/
+#c-imagen-jugando, #c-imagen-manada img, #c-imagen-chape
+{ position: static !important;}
+
+
+/*=======================================*/
+/*===== PAG URBANA ======*/
+
+
+.tUrbana {letter-spacing: 0; right: 0;}
+
+
+#contenedorGeneralUrbana {
+display: flex;
+        width: 95%;
+        height: auto;
+        margin: 1em auto;
+        flex-wrap: wrap;
+        flex-direction: column;}
+
+#contenedorFotosUrbana {display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%; height: auto;}
+
+
+.columnaUrbana {width: 100%; }
+
+.columnaUrbana div {display: flex;
+        justify-content: center;}
+
+.columnaUrbana img { max-width: 95%;}
+
+#pieUrbana {margin-top: 2em}
+
+
+/*=======================================*/
+/*===== PAG PERFORMATICA ======*/
+
+.tPerfo { font-size: 2.6em !important; 
+  letter-spacing: 2px; }
+
+#tInteractivo { font-size: 2em !important; }
+
+.contenedor-original img { width: 90% }
+
+.seccionPerfo {
+    width: 100%;
+    margin: 20PX auto}
+
+#contenedorGeneralPerfo {
+    padding: 0;
+    display: flex;
+    width: 100%;}
+
+
+/*=======================================*/
+/*===== PAG SOBRE MI ======*/
+
+#contenedorGeneralSobreMi {width: 100%; max-width: 500px}
+
+#contenedorTextoSobreMi { display: block; width: 90%;}
+
+.tSobreMi {margin: 0 !important}
+
+.columna { width: auto; }
+.columna img { width: auto;max-width: 98%;
+    margin-bottom: 1em;}
+
+
+/*=======================================*/
+/*===== PAG INSPIRACIONES ======*/
+
+  #fondoTurquesa {
+    padding: 0;
+    margin: 0;
+    align-items: center;}
+
+  .carousel-inner {
+    width: 100% !important;
+    height: auto !important;}
+
+  .carousel-item {
+    height: auto !important;
+    padding: 1em 0;
+  }
+
+
+  /* SLIDE  */
+  .contenedor-slide {
+    width: 100% !important;
+    height: auto !important;
+
+    display: flex;
+    flex-direction: column; /* FOTO -> NOMBRE -> AÑO -> TEXTO */
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 1em 0;
+    gap: 1em;}
+
+
+  /*  IMÁGENES  */
+.carousel-item img {
+    max-width: 90vw !important;
+    max-height: 60vh !important;  
+    height: auto;
+    object-fit: contain;}
+
+  .imagen-horizontal,
+  .imagen-vertical,
+  #aves {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+
+  .foto-ave {
+    max-width: 90vw !important;
+    max-height: 45vh !important;}
+
+  /* Triple (colegas) */
+  .triple {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    width: 100%;}
+
+.imagen-texto { width: 90%;
+    margin: 0 !important;}
+
+  .usuarioArtista {
+    font-size: 1.1em;}
+
+
+  /*  TEXTO */
+  .texto {
+    width: 90% !important;
+    max-width: none;
+    max-height: none;
+    padding: 0 0.5em;}
+
+  .texto h2 {
+    font-size: 2.5em !important;}
+
+  .texto h4 {
+    font-size: 1.2em;}
+
+  .texto p {
+    font-size: 1em;
+    line-height: 1.4em;}
+
+
+  /*  CONTROLADORES DEL CARRUSEL */
+  .carousel-control-prev,
+  .carousel-control-next { width: 40px;}
+
+  /*  INDICADORES (bolitas)  */
+  .carousel-indicators [data-bs-target] {
+    width: 7px; height: 7px;}
+
+
+/*=======================================*/
+/*===== PAG DATOS ======*/
+
+#contenedorGeneralDatos {    width: 95%;}
+
+.contenedorDatos {
+    width: 95%; height: auto; padding: 1em;}
+
+
+/*=======================================*/
+/*===== PAG CONTACTO ======*/
+
+/* Contenedor general */
+  #contenedorGeneralContacto {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Formulario */
+  #contenedorFormulario {
+    width: 100%;
+    max-width: 100%;
+    height: auto;             /* que crezca según contenido */
+    padding: 20px;
+    margin: 1.5em 0;
+    border-radius: 25px;
+  }
+
+  /* Título */
+  #contenedorFormulario h2 {
+    font-size: 2em;          /* más chico pero bien visible */
+    text-align: center;      /* centrado en móvil */
+    line-height: 1.2;
+  }
+
+  /* Formulario interno */
+  form {
+    width: 100%;
+  }
+
+  /* Etiquetas */
+  .form-label {
+    font-size: 1.1em;
+  }
+
+  /* Inputs y textarea */
+  .form-control {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  textarea.form-control {
+    height: 120px;
+  }
+
+  /* Botón */
+  button.btn {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+
+}

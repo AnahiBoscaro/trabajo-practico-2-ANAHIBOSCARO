@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>Fotos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <link href="https://fonts.googleapis.com/css2?family=Coda:wght@800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/estilos.css">
 
@@ -20,48 +22,34 @@
 
 
 <nav>
-<ul class="nav nav-pills">
-  <!-- Ítem 1: Home -->
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-  </li>
 
-  <!-- Ítem 2: Fotos (con submenú desplegable) -->
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="fotos.html" role="button" aria-expanded="false">Fotos</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="musica.html">Música</a></li>
-      <li><a class="dropdown-item" href="naturaleza.html">Naturaleza</a></li>
-      <li><a class="dropdown-item" href="urbana.html">Urbana</a></li>
-      <li><a class="dropdown-item" href="perfo.html">Performática</a></li>
-    </ul>
-  </li>
+  <!-- Botón hamburguesa (solo visible en móviles) -->
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-  <!-- Ítem 3: Sobre mí -->
-  <li class="nav-item">
-    <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
-  </li>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Home</a>
+    </li>
 
-  <!-- Ítem 4: Reflexiones -->
-  <li class="nav-item">
-    <a class="nav-link" href="reflexiones.html">Reflexiones</a>
-  </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="fotos.html" role="button">
+        Fotos
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="musica.html">Música</a></li>
+        <li><a class="dropdown-item" href="naturaleza.html">Naturaleza</a></li>
+        <li><a class="dropdown-item" href="urbana.html">Urbana</a></li>
+        <li><a class="dropdown-item" href="perfo.html">Performática</a></li>
+      </ul>
+    </li>
 
-  <!-- Ítem 5: Inspiraciones -->
-  <li class="nav-item">
-    <a class="nav-link" href="inspiraciones.html">Inspiraciones</a>
-  </li>
+    <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+    <li class="nav-item"><a class="nav-link" href="reflexiones.html">Reflexiones</a></li>
+    <li class="nav-item"><a class="nav-link" href="inspiraciones.html">Inspiraciones</a></li>
+    <li class="nav-item"><a class="nav-link" href="datos.html">Datos</a></li>
+    <li class="nav-item"><a class="nav-link" href="contacto.html">✉</a></li>
+  </ul>
 
-  <!-- Ítem 6: Datos -->
-  <li class="nav-item">
-    <a class="nav-link" href="datos.html">Datos</a>
-  </li>
-
-  <!-- Ítem 7: Contacto -->
-  <li class="nav-item">
-    <a class="nav-link" href="contacto.html">✉</a>
-  </li>
-</ul>
 </nav>
 
 
@@ -73,25 +61,25 @@
     <div class="row row-cols-4">
       
       <div class="col">
-        <a href="musica.html" class="tarjeta musica">
+        <a href="musica.html" class="tarjeta fotoMusica">
           <span>Música en vivo</span>
         </a>
       </div>
 
       <div class="col">
-        <a href="naturaleza.html" class="tarjeta naturaleza">
+        <a href="naturaleza.html" class="tarjeta fotoNaturaleza">
          <span> Naturaleza</span>
         </a>
       </div>
 
       <div class="col">
-        <a href="urbana.html" class="tarjeta urbana">
+        <a href="urbana.html" class="tarjeta fotoUrbana">
           <span>Urbana</span>
         </a>
       </div>
 
       <div class="col">
-        <a href="perfo.html" class="tarjeta perfo">
+        <a href="perfo.html" class="tarjeta fotoPerfo">
           <span>Performática</span>
         </a>
       </div>
@@ -110,7 +98,12 @@
   <img id="logobBehance" src="img/logo-behance.jpg" alt="logo de behance">
   </div>
 </footer>
+
+
 </div>
+
+<script src="js/menu-hamburguesa.js"></script>
+
 
 </body>
 </html>
